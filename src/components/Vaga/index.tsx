@@ -1,11 +1,4 @@
-import React from 'react'
-import {
-  VagaContainer,
-  VagaTitulo,
-  VagaLista,
-  VagaItem,
-  VagaLink
-} from './styles'
+import { VagaContainer, VagaTitulo, VagaLink } from './styles'
 
 type Props = {
   titulo: string
@@ -15,21 +8,20 @@ type Props = {
   salarioMin: number
   salarioMax: number
   requisitos: string[]
-  href?: string
 }
 
 const Vaga = (props: Props) => (
   <VagaContainer>
     <VagaTitulo>{props.titulo}</VagaTitulo>
-    <VagaLista>
-      <VagaItem>Localização: {props.localizacao}</VagaItem>
-      <VagaItem>Senioridade: {props.nivel}</VagaItem>
-      <VagaItem>Tipo de contratação: {props.modalidade}</VagaItem>
-      <VagaItem>
+    <ul>
+      <li>Localizacao: {props.localizacao}</li>
+      <li>Senioridade: {props.nivel}</li>
+      <li>Tipo de contratacao: {props.modalidade}</li>
+      <li>
         Salário: {props.salarioMin} - {props.salarioMax}
-      </VagaItem>
-      <VagaItem>Requisitos: {props.requisitos.join(', ')}</VagaItem>
-    </VagaLista>
+      </li>
+      <li>Requisitos: {props.requisitos.join(', ')}</li>
+    </ul>
     <VagaLink>{'Ver detalhes e candidatar-se'}</VagaLink>
   </VagaContainer>
 )

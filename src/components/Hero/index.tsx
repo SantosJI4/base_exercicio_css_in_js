@@ -4,7 +4,9 @@ import { Form, Content, HeroTitle } from './styles'
 const Hero = () => (
   <Form>
     <Content>
-      <HeroTitle>Bem-vindo ao EBAC Jobs</HeroTitle>
+      <HeroTitle>
+        As melhores vagas para tecnologia, design e artes visuais.
+      </HeroTitle>
     </Content>
   </Form>
 )
