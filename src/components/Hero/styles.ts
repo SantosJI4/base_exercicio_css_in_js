@@ -8,6 +8,7 @@ export const Form = styled.div`
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
 
   &::before {
     position: absolute;
@@ -29,11 +30,13 @@ export const Form = styled.div`
 export const Content = styled.div`
   position: relative;
   color: #eee;
+  text-align: center;
 `
 
 export const HeroTitle = styled.h1`
   font-family: Gloock, serif;
   font-size: 48px;
+  text-align: center;
 
   @media (max-width: 768px) {
     font-size: 32px;
